@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+<!------------------------------HEAD------------------------------------------------>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+	
+	<link rel="stylesheet" type="text/css" href="CSS/style.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<!-- boorstrap -->
+	
+</head>
+
+<!------------------------->
+<!------------------------------BODY------------------------------------------------>
+
+
+<!------------------------------BODY------------------------------------------------>
+<body>
+	<!------------------------->
+	<!--------------------------------------------------------------------- nav section ------------------------------------->
+	<nav id="grad2" class="full-menu">
+	
+		<!---- box 1 ---->
+		
+		<div class="logo-n-tag">
+			<div class="logo">
+				<img src="images/global.png">
+			</div>
+			<div class="tagline">ITWD6.408</div>
+		</div>
+	
+		<!---- box 2 ---->
+		
+		<div class="page-menu">
+			<div class="horo-menu">
+				<ul>
+					<li ><a href="index.html">HOME</a></li>
+					<li class="active"><a href="form.html">FORMS</a></li>
+					<li><a href="json.html">XML/JSON</a></li>
+					<li><a href="js-demo.html">JAVASCRIPT</a></li>
+					<li><a href="my-research.html">RESEARCH</a></li>	
+				</ul>
+			</div>
+		</div>
+		
+		
+		<!---- box 3 ---->
+		<div class="menu-icon" onclick="openNav()">≡</div>
+		<div id="myNav" class="m-overlay">
+
+		  <!-- Button to close the overlay navigation -->
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+		  <!-- Overlay content -->
+			<div class="m-overlay-content">
+				<a href="index.html">Home</a>
+				<a href="form.html">Forms </a>
+				<a href="json.html">Json / XML</a>
+				<a href="js-demo.html">JavaScript</a>
+				<a href="my-research.html">research</a>
+			</div>
+
+		</div>
+		
+	</nav>
+
+	<!-- code for drop menu goes here (it is hidden on mobile page) --->
+
+	<!------------------------->
+	<!------------------------------------------------------------------ code for main here --------------------------------->
+
+	
+	<!---------------------------------------------------->	
+	<!--Main content section-->
+	<main class="main2">
+		<!--Internal menu: contain 4 buttons-->
+		<section class="internal-menu-area">	
+			<div class="internal-menu-row">
+				<div class="internal-menu-row-box">
+					<button class="demo-button" onclick="showDemo(0)">HTML FORM</button>
+				</div>
+				<div class="internal-menu-row-box">
+					<button class="demo-button" onclick="showDemo(1)">GOOGLE FORM</button>
+				</div>
+			</div>
+		</section>
+		
+		<!--Demo area: contain 4 boxes for 4 demos-->
+		<section class="container demo-area pt-0 ">
+			
+			<article class="demo-box"> 
+				<h4 class="demo-title">HMTL</h4>
+				<div>
+					<form >
+					<div class="form-group row">
+						<label for="inputName" class="col-sm-2 col-form-label">First Name</label>
+						<div class="col-sm-10">
+							<input type="text" class="form-control" id="firstName" required>
+						</div>
+					</div>
+				
+					<div class="form-group row">
+						<label for="inputPassword3" class="col-sm-2 col-form-label">Last Name</label>
+						<div class="col-sm-10">
+							<input type="text" class="form-control" id="secondName" required>
+						</div>
+					</div>
+			
+					<br>
+					
+					<!-- address form inputs --> 
+					<h5>ADDRESS</h5>
+					<br>
+					<div class="form-group row">
+						<label for="inputAddress1" class="col-sm-2 col-form-label" required>Line 1:</label>
+						<div class="col-sm-10">
+							<input type="text" class="form-control" id="addressLn1">
+						</div>
+					</div>
+				
+					<div class="form-group row">
+						<label for="inputAddress2" class="col-sm-2 col-form-label">Line 2:</label>
+						<div class="col-sm-10">
+							<input type="text" class="form-control" id="addressLn2">
+						</div>
+					</div>
+					
+					<div class="form-group row">
+						<label for="inputTown" class="col-sm-2 col-form-label">Town/City:</label>
+						<div class="col-sm-10">
+							<input type="text" class="form-control" id="townCity">
+						</div>
+					</div>
+					
+					<!-- gender section -->
+					<fieldset id="2" class="form-group row">
+						<label for="genderOpt" class="col-sm-2 col-form-label">Gender:</label>
+						<div class="form-inline col-sm-10">
+							<!-- 1 -->
+							<div class="form-check mr-sm-3">
+								<input class="form-check-input" type="radio" name="gridRadios1" id="gender1" value="Male" >
+								<label class="form-check-label" for="genderRad">
+								  Male
+								</label>
+							</div>
+							<!-- 2 -->
+							<div class="form-check mr-sm-3">
+								<input class="form-check-input" type="radio" name="gridRadios1" id="gender2" value="female">
+								<label class="form-check-label" for="genderRad">
+								  Female
+								</label>
+							</div>
+							<!-- 2 -->
+							<div class="form-check mr-sm-3">
+								<input class="form-check-input" type="radio" name="gridRadios1" id="gender3" value="Other" >
+								<label class="form-check-label" for="genderRad">
+								  Other
+								</label>
+							</div>
+
+						</div>
+					</fieldset>
+					
+					<!-- phone type section --> 
+					<fieldset id="1" class="form-group row">
+						<label for="brandSelect" class="col-sm-2 col-form-label">Phone Brand:</label>
+						<div class="form-inline col-sm-10">
+							<!-- 1 -->
+							<div class="form-check mr-sm-3">
+								<input class="form-check-input" type="radio" name="gridRadios2" id="Provider1" value="Windows" required>
+								<label class="form-check-label" for="gridRadios4">
+								Windows
+								</label>
+							</div>
+							<!-- 2 -->
+							<div class="form-check mr-sm-3">
+								<input class="form-check-input" type="radio" name="gridRadios2" id="Provider2" value="apple">
+								<label class="form-check-label" for="gridRadios5">
+								Apple 
+								</label>
+							</div>
+							<!-- 3 -->
+							<div class="form-check mr-sm-3">
+								<input class="form-check-input" type="radio" name="gridRadios2" id="Provider3" value="Android" required>
+								<label class="form-check-label" for="gridRadios6">
+								Android
+								</label>
+							</div>
+							<!-- 4 -->
+							<div class="form-check mr-sm-4">
+								<input class="form-check-input" type="radio" name="gridRadios2" id="Provider4" value="Other" >
+								<label class="form-check-label" for="gridRadios7">
+								Other
+								</label>
+							</div>
+
+						</div>
+					</fieldset>
+					
+					<!-- provider dropdown -->
+					<div class="form-group row">
+						<label class="col-sm-2" for="exampleFormControlSelect1">Service Provider</label>
+						<div class="col-sm-4">
+							<select class="form-control" id="exampleFormControlSelect1">
+								<option>None</option>
+								<option>Spark</option>
+								<option>Vodafone</option>
+								<option>Now</option>
+								<option>Other</option>
+							</select>
+						
+						</div>
+					</div>
+					
+					<div class="form-group row ">
+						<label class="col-sm-2 col-form-label " for="exampleFormControlTextarea1">Do you use your phone for study? Please explain</label>
+						<div class="col-sm-10">
+							<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+						</div>
+					</div>
+				
+					<div class="form-group row">
+						<div class="col-sm-10">
+							<button type="submit" class="btn btn-primary" onclick="readForm()">submit</button>
+							<button type="reset" class="btn btn-primary">reset</button>
+						</div>
+					</div>
+				
+					</form>
+				</div>
+			</article>
+			
+			<article class="demo-box"> 
+			<h4 class="demo-title">GOOGLE FORM</h4>
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdXZpPj8NBNq-QTHI4uCqpjmmVPe9xBmuFNG2N5nuHKBH7NUQ/viewform?embedded=true" width="100%" height="1983" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>			
+			
+		</section>
+	</main>
+	
+	<!---------------------------------------------------->	
+	<!--Footer section-->
+	<footer id="grad2">
+		<div class="social-media-pic">
+			<a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+			<a href="https://twitter.com/?lang=en" class="fa fa-twitter"></a>
+			<a href="#" class="fa fa-google"></a>
+			<a href="https://nz.linkedin.com/" class="fa fa-linkedin"></a>
+			<a href="https://www.youtube.com/watch?v=xm3YgoEiEDc" class="fa fa-youtube"></a>
+			<a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+		</div>
+
+		<div class="footer-text"> @Created By Mason Scanlan with credit To Daniel Dang 
+		<br>
+		<br>
+		contact me at: <a href="mailto:masonscanlanhome@gmail.com"> masonscanlanhome@gmail.com</a>
+		</div>
+	</footer>
+	
+	
+	
+	<!--Embed the js file at the bottom of the html file-->
+	<script type="text/javascript" src="java/js.js">
+	</script>
+	
+	<script>
+		showDemo(0);
+	</script>
+	
+
+</body>
+</html>
+

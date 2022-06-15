@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<!------------------------------HEAD------------------------------------------------>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+	<link rel="stylesheet" type="text/css" href="CSS/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<!------------------------->
+<!------------------------------BODY------------------------------------------------>
+<body>
+	<!------------------------->
+	<!--------------------------------------------------------------------- nav section ------------------------------------->
+	<nav id="grad2" class="full-menu">
+	
+		<!-- box 1 -->
+		<!-- icon and taglines -->
+		<div class="logo-n-tag">
+			<div class="logo">
+				<img src="images/global.png">
+			</div>
+			<div class="tagline">ITWD6.408</div>
+		</div>
+	
+		<!-- box 2 -->
+		<!------ horozontal hyperlinks (home java xml) ------------->
+		<div class="page-menu">
+			<div class="horo-menu">
+				<ul>
+					<li class="active"><a href="index.html">HOME</a></li>
+					<li><a href="form.html">FORMS</a></li>
+					<li><a href="json.html">XML/JSON</a></li>
+					<li><a href="js-demo.html">JAVASCRIPT</a></li>
+					<li><a href="my-research.html">RESEARCH</a></li>	
+				</ul>
+			</div>
+		</div>
+		
+		<!---------------- menu icon ---------------------------------------------->
+		<!-- box 3 -->
+		<p class="menu-icon" onclick="openNav()">≡</p>
+		<div id="myNav" class="m-overlay">
+
+		  <!-- Button to close the overlay navigation -->
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+		  <!-- Overlay content -->
+			<div class="m-overlay-content">
+				<a href="index.html">Home</a>
+				<a href="form.html">Forms </a>
+				<a href="json.html">Json / XML</a>
+				<a href="js-demo.html">JavaScript</a>
+				<a href="my-research.html">research</a>
+			</div>
+
+		</div>
+	</nav>
+
+	<!-- code for drop menu goes here (it is hidden on mobile page) --->
+
+	<!------------------------->
+	<!------------------------------------------------------------------ code for main here --------------------------------->
+	
+	<main class="main1">
+	
+		<!---------------------------------------------------------------- BANNER SECTION ----------------------------------->
+		<section class="showcase">
+			<div class="showcase bg-image"> </div>
+			<div class="showcase-text">
+				<h4>Advanced Internet and Webpagwe Development</h4>
+				<h1>I am Mason S. </h1>
+				<p>And I'm A Developer</p>
+			</div>
+		</section>
+		
+		<!----------------------------------------------------------------- bio section and web ------------------------------------>
+		<!-------- combo class to link the two ------------>
+		
+		<section class="web-bio">
+			
+			<!----- bio section -->
+			<div class="bio">
+			<h1>BIO</h1>
+				<div class="bio-text-container">
+					<div class="bio-pic">
+						<img src="images/portrait-icon.jpg">
+					</div>
+					<div>
+						<p class="bio-info"> Welcome to my web page for Advanced Web Page Devleopment.
+						</p>
+						<p class="bio-info"> A bit about me: Programming was never a strong point in my skill set when it came to computing.
+						learning HTML, JAVASCRIPT and CSS was fun, challanging and rewarding to see the web page pull together.
+						Although this could get very frustrating at times, a break and slowing down often fixed the issues i was having. I look 
+						forward to using this skill set for free-lance development and possibly carrear skill sets
+						</p>
+				</div>	</div>
+			</div>
+			
+			<!--- tech section ------>
+			<div id="grad1" class="web-tech">
+				<div>
+					<h1>MY WEB TECHNOLOGIES</h1>
+				</div>
+					<p>TOP 5 Web Technologies</p>
+				<ol>
+					<li><span class="highlight">CSS:  </span>CSS is the language for describing the presentation of Web pages, including colors, layout, and fonts.</li>
+					<li><span class="highlight">JAVASCRIPT: </span> to add dynamic behavior to the webpage and add special effects to the webpage.</li>
+					<li><span class="highlight">HTML: </span>(HyperText Markup Language) is the most basic building block of the Web.</li>
+					<li><span class="highlight">Web Design: </span>the design of websites that are displayed on the internet</li>
+					<li><span class="highlight">BOOTSTRAP: </span>Quickly design and customize responsive mobile-first sites</li>
+				</ol>		
+				
+			</div>
+			
+		</section>
+		
+		<!--------------------------------------------------------------------web development section-------------------------------->
+		
+		<!-- actual section -->
+		<section class="web-development-section">
+		
+			<!-- area for flip boxes (we can change overall orientation with this container -->
+			
+			<h1>My Web Development Competencies</h1>
+			
+			<div class="topics-container">
+			
+				<div class="topics-box">
+				
+					<!-- flip box1 -->
+					<div class="flip-box">
+					  <div class="flip-box-inner">
+						<div class="flip-box-front">
+							<h4>MARK UP (HTML5)</h4>
+							
+							<img src="images/html5.png">
+						</div>
+						<div class="flip-box-back">
+							
+							<p>	HTML (Hyper-Text Markup Language) is used to put the <span class="red-color">structure & content </span> of a website together (Like a skeleton of a body).<br>
+							It is the fifth and current major version of the HTML standard, and subsumes XHTML.
+						</div>
+					  </div>
+					</div>
+				</div>	
+				
+				<div class="topics-box">
+				
+					<!-- flip box2 -->
+					<div class="flip-box">
+					  <div class="flip-box-inner">
+						<div class="flip-box-front">
+							<h4>STYLING (CSS)</h4>
+							<img src="images/css3.png">
+						</div>
+						<div class="flip-box-back">
+						<p>We use CSS to style and personalise HTML code to give design and flair. Without CSS, HTML would be nothing more than standard Libary 
+						classes displayed on a dull chaotic page</p>  
+						</div>
+					  </div>
+					</div>
+				</div>	
+				
+				<div class="topics-box">
+				
+					<!-- flip box3 -->
+					<div class="flip-box">
+					  <div class="flip-box-inner">
+						<div class="flip-box-front">
+							<h4>JAVASCRIPT(HTML5)</h4>
+							<img src="images/javascript.png">
+						</div>
+						<div class="flip-box-back">
+							<p>We use Javascript to give structure and style to a webpage similar to CSS. Java gives webpages interactive elements that engage the user by converting
+							a static page into a interactive one</p>
+						</div>
+					  </div>
+					</div>
+				</div>
+				
+			</div>
+			
+		</section>
+		<section class="authenticity"> 
+			<h1>STATEMENT OF AUTHENTICITY</h1>
+			<br>
+			<p>
+				“I confirm that:<br>
+				This is an original assessment and is entirely my own work.<br>
+				It contains no material previously published or written by another person or myself except where due acknowledgement is made in the text.</br>
+				No material which to a substantial extent, has been submitted for any other academic course, is included without acknowledgement.”<br>
+			</p>
+		</section>	
+		
+		
+		
+	</main>
+	
+	<footer id="grad2">
+		<div class="social-media-pic">
+			<a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+			<a href="https://twitter.com/?lang=en" class="fa fa-twitter"></a>
+			<a href="#" class="fa fa-google"></a>
+			<a href="https://nz.linkedin.com/" class="fa fa-linkedin"></a>
+			<a href="https://www.youtube.com/watch?v=xm3YgoEiEDc" class="fa fa-youtube"></a>
+			<a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+		</div>
+
+		<div class="footer-text"> @Created By Mason Scanlan with credit To Daniel Dang 
+		<br>
+		<br>
+		contact me at: <a href="mailto:masonscanlanhome@gmail.com"> masonscanlanhome@gmail.com</a>
+		</div>
+	</footer>
+	
+	<script type="text/javascript" src="java/js.js">
+	</script>
+
+</body>
+</html>

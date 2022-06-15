@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+<!------------------------------HEAD------------------------------------------------>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+	<link rel="stylesheet" type="text/css" href="CSS/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<!------------------------------BODY------------------------------------------------>
+<body>
+	<!---------------------------------------------------->	
+	<!--Navigation menu section-->	
+	<nav id="grad2" class="full-menu">
+	
+		<!-- box 1 -->
+		<!-- icon and taglines -->
+		<div class="logo-n-tag">
+			<div class="logo">
+				<img src="images/global.png">
+			</div>
+			<div class="tagline">ITWD6.408</div>
+		</div>
+	
+		<!-- box 2 -->
+		<!------ horozontal hyperlinks (home java xml) ------------->
+		<div class="page-menu">
+			<div class="horo-menu">
+				<ul>
+					<li ><a href="index.html">HOME</a></li>
+					<li><a href="form.html">FORMS</a></li>
+					<li class="active"><a href="json.html">XML/JSON</a></li>
+					<li><a href="js-demo.html">JAVASCRIPT</a></li>
+					<li><a href="my-research.html">RESEARCH</a></li>	
+				</ul>
+			</div>
+		</div>
+		
+		<!---------------- menu icon ---------------------------------------------->
+		<!-- box 3 -->
+		<p class="menu-icon" onclick="openNav()">≡</p>
+		<div id="myNav" class="m-overlay">
+
+		  <!-- Button to close the overlay navigation -->
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+		  <!-- Overlay content -->
+			<div class="m-overlay-content">
+				<a href="index.html">Home</a>
+				<a href="form.html">Forms </a>
+				<a href="json.html">Json / XML</a>
+				<a href="js-demo.html">JavaScript</a>
+				<a href="my-research.html">research</a>
+			</div>
+
+		</div>
+	</nav>
+
+	
+	<!---------------------------------------------------->	
+	<!--Main content section-->
+	<main class="main2">
+		<!--Internal menu: contain 4 buttons-->
+		<section class="internal-menu-area">	
+			<div class="internal-menu-row">
+				<div class="internal-menu-row-box">
+					<button class="demo-button2" onclick="showDemo2(0)">XML RULES</button>
+				</div>
+				<div class="internal-menu-row-box">
+					<button class="demo-button2" onclick="showDemo2(1)">JSON RULES</button>
+				</div>
+			</div>
+			
+			<div class="internal-menu-row">
+				<div class="internal-menu-row-box">
+					<button class="demo-button2" onclick="showDemo2(2)">RSS</button>
+				</div>
+				<div class="internal-menu-row-box">
+					<button class="demo-button2" onclick="showDemo2(3)">JSON FILE</button>
+				</div>
+			</div>
+		</section>
+		
+		<!--Demo area: contain 4 boxes for 4 demos-->
+		<section class="demo-area">
+		
+			<!-- XML RULES -->
+			<article class="demo-box2"> XML RULES From: <a href="https://www.w3schools.com/xml/xml_syntax.asp">W3 Schools</a>
+			
+				<!-- row 1 -->
+				<div class="rule-group">
+					<div class="rule-box">
+						<h3 class="rule-heading">RULE ONE: All XML Elements must have a closing tag</h3>
+						
+						<p> All XML elements must have a closing tag. XML tags are case sensitive. ... 
+						All XML documents must have a root element. Attribute values must always be quoted.</p>
+					</div>
+					
+					<div class="rule-box">
+						<h3 class="rule-heading">RULE TWO: XML tags are case sensitive.</h3>
+						
+						<p>Is XML and HTML case sensitive?
+						HTML is case insensitive. XHTML , that is being XML is case sensitive. Generally, HTML is case-insensitive, 
+						but there are a few exceptions.</p>
+					</div>
+				</div>	
+				
+				<!-- row 2 -->
+				<div class="rule-group">
+					<div class="rule-box">
+						<h3 class="rule-heading">RULE THREE: All XML elements must be properly nested</h3>
+						
+						<p>XML Nested elements means the element within the element. The structure starts with root element within that another element 
+						that follows accordingly. Root element is the most outer element. Inside the root element, all the other elements mentioned can have 
+						the inner elements.</p>
+					</div>
+					
+					<div class="rule-box">
+						<h3 class="rule-heading">RULE FOUR: All XML documents must have a root element.</h3>
+						
+						<p> All XML documents must contain a single tag pair to define a root element. All other elements must be within this root element. 
+						All elements can have sub elements (child elements). Sub elements must be correctly nested within their parent element.</p>
+					</div>
+				</div>
+	
+				<!-- row 3 -->
+				<div class="rule-group">
+					<div class="rule-box">
+						<h3 class="rule-heading">RULE FIVE: Attribute values must always be quoted.</h3>
+						
+						<p> XML elements can have attributes in name/value pairs; however, the attribute value must always be quoted. 
+						In the incorrect document, the date attribute in the note element is not quoted.</p>
+					</div>
+					
+					<div class="rule-box">
+						<h3 class="rule-heading">RULE SIX: The XML Prolog</h3>
+						
+						<p>The XML prolog is optional. If it exists, it must come first in the document.
+
+						XML documents can contain international characters, like Norwegian øæå or French êèé.
+
+						To avoid errors, you should specify the encoding used, or save your XML files as UTF-8.
+
+						UTF-8 is the default character encoding for XML documents.</p>
+					</div>
+				</div>	
+			</article>
+			
+			<!-- JSON rules -->
+			<article class="demo-box2"> JSON RULES
+			<!-- row 1 -->
+				<div class="rule-group">
+					<div class="rule-box">
+						<h3 class="rule-heading">RULE ONE: Data is in name/value pairs</h3>
+						<p>JSON is data written as value/name pairs.</p>
+						
+						<p>A name/value pair consits of a field name (this must be in "" double quotes), 
+						followed by a colon, then finaly followed by a value. for example {"occupation":"underpaid"}</p>
+						<img src="images\nameValue.bmp">
+					</div>
+					
+					<div class="rule-box">
+						<h3 class="rule-heading">RULE TWO: Data is separated by commas</h3>
+						<p>Just like in many different programming languages, data must be sepperated by a comma. </p>
+						<br>
+						<p>This has a literal effect of sepperating a data value so that a computer and its binary thinking can 
+						distinguish different data values. {name:"mason", Age: "26" feelsLike: "80"}	</p>
+						<img src="images\quotation.bmp">
+					</div>
+				</div>	
+				
+				<!-- row 2 -->
+				<div class="rule-group">
+					<div class="rule-box">
+						<h3 class="rule-heading">RULE THREE: Curly braces hold objects</h3>
+						<p>JSON syntax is derived from JAVASCRIPT. This means that the object notation is similar, very little extra 
+						software is needed to woek with JSON within JAVASCRIPT</p>
+						<br>
+						<p>so what does this look like? it is similar to how you would expect to see objects in JavaScript. 
+						Person = {"name":"Mason", "age":"26", "emotionalStatus":"Help"};</p>
+						<img src="images\array.bmp">
+					</div>
+					<div class="rule-box">
+						<h3 class="rule-heading">RULE FOUR: Square brackets hold arrays</h3>
+						<p>Arrays are allways fun! arrays are great ways of storing and utalising structured data. we can do this the same way in JSON as 
+						we do in javascript</p>
+						<br>
+						<p> What does this look like? --> myArrayOfSadExamples = ["Tired", "Happy", "Also Tired"];</p>
+						<img src="images\object.bmp">
+					</div>
+				</div>
+	
+				<!-- 
+				<div class="rule-group">
+					<div class="rule-box">
+						<h3 class="rule-heading">RULE ONE: ----------------</h3>
+						<p> text text text text text text text text text text text text </p>
+						
+						<p> more text more text more text more text more text more text more text</p>
+					</div>
+					
+					<div class="rule-box">
+						<h3 class="rule-heading">RULE ONE: ----------------</h3>
+						<p> text text text text text text text text text text text text </p>
+						
+						<p> more text more text more text more text more text more text more text</p>
+					</div>
+				</div>	 -->
+			</article>
+			
+			<!-- nassa feed -->
+			<article class="demo-box2"> 
+				<div class="demo-box-content">
+					<hr>
+					<h1>XML RSS DEMO: load RSS File</h1>
+					<br>
+					<h4>Your Daily NASSA News</h4>
+
+					<div id="rss-feeder">
+					
+					  <h4>Your Nassa News: <a href="https://www.nasa.gov/rss/dyn/educationnews.rss">https://www.nasa.gov/rss/dyn/educationnews.rss</a></h4>
+					  <button type="button" onclick="loadOtherRSS()">Load RSS</button>
+					  <section id="RssFeed">
+					  </section>
+					</div>
+					</div>
+			</article>
+			
+			<!-- Json DATA retreiveal -->
+			<article class="demo-box2 ">
+				<div class="demo-box-content">
+					<hr>
+					<h1>JSON AND AJAX DEMONSTRATION: Load JSON File Stored on Web Server</h1>
+					<br>
+					<h1>View JSON File at <a href="https://raw.githubusercontent.com/SCANLM1/jasonText/main/asses">https://raw.githubusercontent.com/SCANLM1/jasonText/main/asses</a></h1>
+					<br>
+					<button onclick="loadJSONFile()">Load JSON File</button>	
+				
+
+
+					<!--Content section-->
+					<section>
+						<div id="json-data"></div>
+					</section>
+				</div>
+			</article>
+			
+		</section>
+	</main>
+	
+	<!---------------------------------------------------->	
+	<!--Footer section-->
+	<footer id="grad2">
+		<div class="social-media-pic">
+			<a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+			<a href="https://twitter.com/?lang=en" class="fa fa-twitter"></a>
+			<a href="#" class="fa fa-google"></a>
+			<a href="https://nz.linkedin.com/" class="fa fa-linkedin"></a>
+			<a href="https://www.youtube.com/watch?v=xm3YgoEiEDc" class="fa fa-youtube"></a>
+			<a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+		</div>
+
+		<div class="footer-text"> @Created By Mason Scanlan with credit To Daniel Dang 
+		<br>
+		<br>
+		contact me at: <a href="mailto:masonscanlanhome@gmail.com"> masonscanlanhome@gmail.com</a>
+		</div>
+	</footer>
+	<!--Embed the js file at the bottom of the html file-->
+	<script type="text/javascript" src="java/js.js">
+	</script>
+	
+	<script>
+		showDemo2(0);
+	</script>
+
+</body>
+</html>
+
